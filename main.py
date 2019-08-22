@@ -19,7 +19,7 @@ def list(url,mName=""):
     p.start()
     f = open('list_' + mName + '.csv', 'w')
     f.close()
-    for i in pl.parse_links()[:2]:
+    for i in pl.parse_links():
         index = index + 1
         # print(i.replace("/watch?v=",""))
         stYoutube = subtitleYoutube(i.replace("/watch?v=", ""),mName)

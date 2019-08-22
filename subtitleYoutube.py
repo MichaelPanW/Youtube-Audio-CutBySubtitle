@@ -31,7 +31,7 @@ class subtitleYoutube():
     def shCode(self):
         run("youtube-dl --write-sub --sub-lang zh-TW  --extract-audio  --audio-format "+self.audioType+" -o  Movies/" + self.v + ".%(ext)s --write-sub  https://www.youtube.com/watch?v=" + self.v)
     #裁切audio
-    def cutYoutube(self, src="box"):
+    def cutYoutube(self, src="audio"):
         outputList = {"vttPath": self.vttPath,
                       "wavPath": self.wavPath,
                       "name": self.v,
